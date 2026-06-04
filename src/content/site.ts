@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "AlphaX Dezignerz Studio",
-  tagline: "Turn Your Travel Reels into Booking Machines",
+  tagline: "Turn Travel Scrolls Into Booking Inquiries",
   description:
     "Premium social media design, branding, and reels for Indian travel agencies. Trusted by 15+ travel brands across India.",
   url: "https://www.alphaxdezignerzstudio.com",

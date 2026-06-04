@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import type { BrandIdentityTier } from "@/content/services";
-import { PrimaryCta } from "@/components/PrimaryCta";
+import { WhatsappCta } from "@/components/WhatsappCta";
 import { StaggerGroup, StaggerItem } from "@/components/Stagger";
 
 type BrandIdentityTierCardsProps = {
@@ -48,7 +48,11 @@ export function BrandIdentityTierCards({
                 </li>
               ))}
             </ul>
-            <PrimaryCta className="btn-cta mt-8 w-full justify-center py-3 text-center text-sm" />
+            <WhatsappCta
+              message={tier.whatsappPrefill}
+              label="Start this package on WhatsApp →"
+              className="btn-cta mt-8 w-full justify-center py-3 text-center text-sm"
+            />
           </motion.article>
         </StaggerItem>
       ))}

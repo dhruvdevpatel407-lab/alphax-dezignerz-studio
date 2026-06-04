@@ -17,7 +17,15 @@ import { WhyAlphaXComparison } from "@/components/WhyAlphaXComparison";
 import { InsightsNewsletter } from "@/components/InsightsNewsletter";
 import { PrimaryCta } from "@/components/PrimaryCta";
 import { BookingCta } from "@/components/BookingCta";
-import { finalCta, homePortfolioCopy } from "@/content/conversion";
+import { PortfolioMasonryPreview } from "@/components/PortfolioMasonryPreview";
+import { ReelSpotlight } from "@/components/home/ReelSpotlight";
+import { ProblemSolution } from "@/components/home/ProblemSolution";
+import { ConversionGuarantee } from "@/components/ConversionGuarantee";
+import {
+  finalCta,
+  homeMasonryCopy,
+  homePortfolioCopy,
+} from "@/content/conversion";
 import { pageMetadata } from "@/content/seo";
 
 export const metadata: Metadata = pageMetadata({
@@ -31,6 +39,23 @@ export default function HomePage() {
       <CategoryQuickLinks />
       <Marquee />
       <ConversionTrustStrip />
+      <ProblemSolution />
+
+      <Section variant="surface" id="showcase" className="!bg-surfaceMuted">
+        <FadeIn>
+          <span className="label-accent">{homeMasonryCopy.eyebrow}</span>
+          <h2 className="mt-2 max-w-3xl text-3xl font-bold text-navy sm:text-4xl lg:text-5xl">
+            {homeMasonryCopy.headline}
+          </h2>
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-navy/90 sm:text-lg">
+            {homeMasonryCopy.subheadline}
+          </p>
+        </FadeIn>
+        <div className="mt-10">
+          <PortfolioMasonryPreview />
+        </div>
+        <ReelSpotlight />
+      </Section>
 
       <Section variant="white" id="work" className="!py-12 sm:!py-16">
         <FadeIn>
@@ -49,6 +74,7 @@ export default function HomePage() {
 
       <OnboardingProcess />
       <WhyAlphaXComparison />
+      <ConversionGuarantee />
 
       <Section variant="surface" id="pricing" className="!bg-white">
         <HomePricingOffer />

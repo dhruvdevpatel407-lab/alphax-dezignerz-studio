@@ -13,6 +13,9 @@ export const defaultSeo = {
     "social media for travel agency",
     "dmc branding",
     "travel reel design ahmedabad",
+    "travel agency graphic design",
+    "instagram reels for travel business",
+    "travel marketing agency india",
   ],
   ogImage: "/og-image.jpg",
 } as const;

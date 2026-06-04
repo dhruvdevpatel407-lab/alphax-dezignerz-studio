@@ -8,6 +8,8 @@ import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { JsonLd } from "@/components/JsonLd";
 import { ScarcityBanner } from "@/components/ScarcityBanner";
 import { LeadMagnetPopup } from "@/components/LeadMagnetPopup";
+import { StickyMobileCta } from "@/components/StickyMobileCta";
+import { Analytics } from "@/components/Analytics";
 import { rootMetadata } from "@/content/seo";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -32,7 +34,8 @@ export default function RootLayout({
       <head>
         <meta name="msvalidate.01" content="EF340871B3925EDE3C797C6D51617BEC" />
       </head>
-      <body className={`min-h-screen ${plusJakarta.className}`}>
+      <body className={`min-h-screen pb-[4.5rem] sm:pb-0 ${plusJakarta.className}`}>
+        <Analytics />
         <JsonLd />
         <ScarcityBanner />
         <SiteHeader />
@@ -40,6 +43,7 @@ export default function RootLayout({
           <PageTransition>{children}</PageTransition>
         </main>
         <SiteFooter />
+        <StickyMobileCta />
         <WhatsAppFloat />
         <LeadMagnetPopup />
       </body>

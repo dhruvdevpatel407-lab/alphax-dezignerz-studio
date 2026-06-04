@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 import { FadeIn } from "@/components/FadeIn";
 import { PrimaryCta } from "@/components/PrimaryCta";
+import { BookingCta } from "@/components/BookingCta";
 import { Section } from "@/components/Section";
 import { pageMetadata } from "@/content/seo";
 import { siteConfig } from "@/content/site";
@@ -25,9 +26,13 @@ export default function ContactPage() {
             WhatsApp is the fastest channel for samples and timelines. Prefer email or the
             form? We respond within one business day.
           </p>
-          <div className="mt-8">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <PrimaryCta className="btn-cta w-full px-8 py-4 text-base sm:w-auto sm:px-12 sm:py-5 sm:text-lg" />
+            <BookingCta className="inline-flex w-full items-center justify-center rounded-full border border-white/25 bg-white/10 px-8 py-4 text-base font-semibold text-white transition hover:bg-white/15 sm:w-auto" />
           </div>
+          <p className="mt-4 text-sm text-white/65">
+            Average reply on WhatsApp: same business day · Free sample in one message
+          </p>
         </FadeIn>
       </Section>
 

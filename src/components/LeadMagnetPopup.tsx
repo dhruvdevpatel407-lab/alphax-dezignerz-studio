@@ -7,8 +7,9 @@ import { PrimaryCta } from "@/components/PrimaryCta";
 import { parseJsonResponse } from "@/lib/safe-json";
 
 const STORAGE_KEY = "alphax-lead-popup-dismissed";
-/** Wait before exit-intent can fire (avoids instant popup on accidental top-edge hover) */
-const MIN_MS_ON_PAGE = 8_000;
+/** Wait before exit-intent / scroll popup (avoids instant annoyance) */
+const MIN_MS_ON_PAGE = 6_000;
+const SCROLL_DEPTH = 0.55;
 
 export function LeadMagnetPopup() {
   const [open, setOpen] = useState(false);
@@ -40,10 +41,19 @@ export function LeadMagnetPopup() {
       }
     };
 
+    const onScrollDepth = () => {
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - doc.clientHeight;
+      if (max <= 0) return;
+      if (doc.scrollTop / max >= SCROLL_DEPTH) showOnce();
+    };
+
     document.addEventListener("mouseout", onExitIntent, { passive: true });
+    window.addEventListener("scroll", onScrollDepth, { passive: true });
 
     return () => {
       document.removeEventListener("mouseout", onExitIntent);
+      window.removeEventListener("scroll", onScrollDepth);
     };
   }, []);
 

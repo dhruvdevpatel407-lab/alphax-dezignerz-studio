@@ -10,7 +10,7 @@ export function WhatsAppFloat() {
 
   return (
     <motion.div
-      className="fixed bottom-6 right-6 z-50"
+      className="fixed bottom-[5.25rem] right-4 z-50 sm:bottom-6 sm:right-6"
       initial={reduce ? false : { opacity: 0, scale: 0.6, y: 24 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ type: "spring", stiffness: 320, damping: 22, delay: 0.8 }}

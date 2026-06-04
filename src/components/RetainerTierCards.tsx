@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import type { RetainerTier } from "@/content/services";
-import { PrimaryCta } from "@/components/PrimaryCta";
+import { WhatsappCta } from "@/components/WhatsappCta";
 import { StaggerGroup, StaggerItem } from "@/components/Stagger";
 
 type RetainerTierCardsProps = {
@@ -58,10 +58,10 @@ export function RetainerTierCards({
               ))}
             </ul>
             <p className="mt-5 text-sm italic text-navy/75">{tier.bestFor}</p>
-            <PrimaryCta
-              className={`mt-6 w-full justify-center py-3 text-center text-sm ${
-                tier.recommended ? "btn-cta" : "btn-cta"
-              }`}
+            <WhatsappCta
+              message={tier.whatsappPrefill}
+              label="Get this plan on WhatsApp →"
+              className="btn-cta mt-6 w-full justify-center py-3 text-center text-sm"
             />
           </motion.article>
         </StaggerItem>

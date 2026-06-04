@@ -3,7 +3,7 @@ import { primaryCta, secondaryCta } from "@/content/cta";
 /** Site-wide marketing copy — final client-facing text */
 
 export const heroSubline =
-  "Premium social media design and branding for Indian travel agencies — built to convert attention into inquiries.";
+  "Premium social posts, reels, and branding for Indian travel agencies — creative built to turn scrolls into WhatsApp inquiries.";
 
 export const trustBarMetric =
   "Helping 15+ travel brands grow organic reach — creative built to drive inquiries.";
@@ -94,6 +94,35 @@ export const homePricingCopy = {
 export const finalCta = {
   headline: "Ready to elevate your travel brand?",
   subheadline: "Get a free sample design — see the quality before you commit.",
+} as const;
+
+export const conversionGuarantee = {
+  eyebrow: "Zero-risk start",
+  headline: "Try before you retainer.",
+  subheadline:
+    "We know travel owners need proof, not promises. Every new client starts with clarity — not a long contract.",
+  points: [
+    {
+      title: "Free sample first",
+      body: "Send your route or offer on WhatsApp. We reply with a sample post or reel frame so you can judge quality live.",
+    },
+    {
+      title: "48-hour kickoff",
+      body: "Once you pick a plan, your first content batch is scoped within two business days — no ghosting, no chasing.",
+    },
+    {
+      title: "Pause anytime",
+      body: "Monthly retainers have no lock-in. Pause when season is slow; resume when campaigns heat up.",
+    },
+  ],
+} as const;
+
+export const homeMasonryCopy = {
+  eyebrow: "Featured work",
+  headline: "Proof you can feel in 10 seconds.",
+  subheadline: "Hover reels to preview motion. Tap portfolio for the full library.",
+  cta: "See full portfolio",
+  ctaHref: "/portfolio",
 } as const;
 
 /** Legacy aliases */

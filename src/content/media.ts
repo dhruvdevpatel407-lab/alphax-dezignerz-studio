@@ -3,8 +3,8 @@
  * Until your file exists, the site uses `fallbackReelMp4` (demo clip).
  */
 
-export const fallbackReelMp4 =
-  "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4";
+/** On-brand fallback when a reel MP4 is missing (e.g. reel-6 before compress + push) */
+export const fallbackReelMp4 = "/portfolio/videos/showreel.mp4";
 
 /** Homepage hero reel — add `public/portfolio/videos/showreel.mp4` */
 export const siteVideos = {

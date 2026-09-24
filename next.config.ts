@@ -15,6 +15,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/demo9962",
+        destination: "/demo9962/index.html",
+        permanent: false,
+      },
+      {
         source: "/:path*",
         has: [{ type: "host", value: "alphaxdezignerzstudio.com" }],
         destination: "https://www.alphaxdezignerzstudio.com/:path*",

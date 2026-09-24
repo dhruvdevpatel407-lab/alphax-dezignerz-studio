@@ -33,17 +33,24 @@ It confirms the same destinations as the client's project files, such as Goa, So
 
 ## Sections
 
+Text comes from the client's own project in the `vinayak-holiday-18-9` Drive folder (`app/components`, `app/*/page.tsx`, `lib/*.ts`).
+
 1. Top bar with phone, email and Instagram
 2. Sticky header with mobile menu and a WhatsApp button
-3. Hero with a "Plan my trip" form that opens WhatsApp with the details filled in
+3. Hero with their banner line and a "Plan my trip" form that opens WhatsApp
 4. About: founder story, key numbers and the three-person team
-5. Services: visa, flights, trains, hotels, holiday packages, dharmik tours and Bhagwat Saptah
-6. Packages: the client's 16 real tours, 8 in India and 8 international, with filters and a WhatsApp enquiry button on each
-7. Visa consultation with their six visa types
-8. Air ticket section with corporate fares and the airlines they book
-9. Why choose us
-10. Contact details for all three phone lines, directions link and Google map
-11. Footer and a floating WhatsApp button
+5. Services: visa, flights, trains, hotels, packages, dharmik tours and Bhagwat Saptah, passport services, custom and group tours
+6. Packages: their 16 tours, 8 in India and 8 international, with filters and a WhatsApp enquiry button on each
+7. Activities: their 12 tour types
+8. Visa: their six visa types with their own taglines
+9. Air tickets: corporate fares and the airlines they book
+10. "Embark on a journey": their four promises
+11. "Find travel perfection": their three planning steps
+12. Their 10 real client reviews
+13. Contact details for all three phone lines, directions link and Google map
+14. Footer with their text, tour links, Facebook and Instagram, and their red, orange and blue stripe colours
+
+WhatsApp: general, tour and flight enquiries go to +91 76240 16110, the same line their own site uses. Visa enquiries go to Chirag Patel on +91 99042 03946.
 
 ## Still to do before going live
 

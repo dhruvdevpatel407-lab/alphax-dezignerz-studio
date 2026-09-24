@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var WHATSAPP = "919904203946";
+  var WHATSAPP = "917624016110"; // same line the client's own site uses
   document.documentElement.classList.remove("no-js");
 
   /*
@@ -161,9 +161,10 @@
         "Hi Vinayak Holiday, I want to plan a trip.",
         "Name: " + name,
         "Mobile: " + phone,
+        "Email: " + (String(d.get("email") || "").trim() || "Not given"),
         "Destination: " + d.get("destination"),
         "Travel month: " + monthText,
-        "Travellers: " + (d.get("pax") || "Not given")
+        "Tourists: " + (d.get("pax") || "Not given")
       ].join("\n");
 
       window.open(waLink(msg), "_blank", "noopener");

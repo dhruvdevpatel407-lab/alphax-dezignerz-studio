@@ -54,7 +54,6 @@ WhatsApp: general, tour and flight enquiries go to +91 76240 16110, the same lin
 
 ## Still to do before going live
 
-- **Swap the placeholder logo.** `assets/img/logo.svg` is a stand-in. Replace it with the client's real logo.
 - **Add photos.** See `assets/img/README.md` for the file names. Cards show colour gradients until then.
 - **Packages** come from the client's own project in the `vinayak-holiday-18-9` Drive folder, in `lib/domestic-tours.ts` and `lib/international-tours.ts`. Their data has no trip lengths or prices, so none are shown. Edit the `PACKAGES` list at the top of `assets/js/main.js`.
 - **Prices** show "On request" on purpose. Add real prices only once the client confirms them.

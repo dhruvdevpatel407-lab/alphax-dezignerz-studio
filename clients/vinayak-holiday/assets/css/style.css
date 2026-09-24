@@ -54,6 +54,9 @@ p { margin: 0 0 1em; }
 .brand__text { font-family: var(--serif); font-size: 1.35rem; color: var(--navy); }
 .brand__text b { color: var(--orange); }
 .brand--light .brand__text { color: #fff; }
+.brand__logo { height: 56px; width: auto; }
+.brand--plate { background: #fff; border-radius: 14px; padding: 8px 12px; }
+.brand--plate img { height: 64px; width: auto; }
 .nav { display: flex; align-items: center; gap: 26px; }
 .nav a:not(.btn) { text-decoration: none; font-weight: 500; font-size: .95rem; color: var(--ink); }
 .nav a:not(.btn):hover { color: var(--orange); }

@@ -14,12 +14,16 @@ These come from the client's business card and from the About Us page in their o
 - Mr. Nikhil Patel: with the company since 2015, international tickets and tours, +91 76240 16110
 - Director on the business card: Chirag Patel
 - Phone and WhatsApp: +91 99042 03946
+- Other lines on their contact page: +91 76240 16110 and +91 97272 73841
 - Email: vinayak2163@gmail.com
-- Address: Near Post Office, Opp. Balbhavan, Khokhra, Ahmedabad 380050
+- Address: Near Post Office, Opp. Balbhavan, Khokhra, Ahmedabad 380008.
+  Their own contact page and directory listings say 380008. The business card says 380050, which looks like a card error. Confirm with the client.
 - Services: Visa, Flights, Trains, Hotels, Packages
 - Instagram: @vinayak_holiday_2163
 - Domain on the card: www.vinayakholiday.com
-- Hours: Monday to Sunday, 9:00 AM to 7:00 PM, from their travel directory listing
+- Hours: open 7 days a week, per their contact page. The 9 AM to 7 PM times come from a directory listing.
+- Visa types on their visa page: USA, Canada, UK, Australia, Student Visa, E-Visa
+- Airlines on their air ticket page: Air India, Air France, Akasa Air, Emirates, Etihad, IndiGo, KLM, Malaysia Airlines, Qatar, Singapore Airlines
 
 ## Taken from the old website
 
@@ -35,10 +39,11 @@ It confirms the same destinations as the client's project files, such as Goa, So
 4. About: founder story, key numbers and the three-person team
 5. Services: visa, flights, trains, hotels, holiday packages, dharmik tours and Bhagwat Saptah
 6. Packages: the client's 16 real tours, 8 in India and 8 international, with filters and a WhatsApp enquiry button on each
-7. Visa help steps and visa countries, led by USA, UK, Canada and Australia
-8. Why choose us
-9. Contact details for both phone lines, directions link and Google map
-10. Footer and a floating WhatsApp button
+7. Visa consultation with their six visa types
+8. Air ticket section with corporate fares and the airlines they book
+9. Why choose us
+10. Contact details for all three phone lines, directions link and Google map
+11. Footer and a floating WhatsApp button
 
 ## Still to do before going live
 

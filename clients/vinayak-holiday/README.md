@@ -5,9 +5,14 @@ It is plain HTML, CSS and JavaScript, with no build step and no dependencies.
 
 ## Business details used
 
-These come from the client's business card files in Drive.
+These come from the client's business card and from the About Us page in their own project (`app/about-us/page.tsx` in the `vinayak-holiday-18-9` Drive folder).
 
-- Director: Chirag Patel
+- Founder and CEO: Mr. Vinod Patel, running tours since 2004
+- 200+ Bhagwat Saptah organised across India
+- Charity: Kamdhenu Lok Kalyan Mandal
+- Mr. Chirag Patel: with the company since 2008, tourist visas for the USA, UK, Canada and Australia
+- Mr. Nikhil Patel: with the company since 2015, international tickets and tours, +91 76240 16110
+- Director on the business card: Chirag Patel
 - Phone and WhatsApp: +91 99042 03946
 - Email: vinayak2163@gmail.com
 - Address: Near Post Office, Opp. Balbhavan, Khokhra, Ahmedabad 380050
@@ -20,20 +25,20 @@ These come from the client's business card files in Drive.
 
 The old site at vinayakholiday.com could not be opened from the build environment.
 Its public search listings show these pages: Home, About Us, Air Ticket, International Tour, and destination pages.
-Their own destinations are Goa, South India, Uttarakhand, Rajasthan and Maldives, so those appear first.
-The South India and Uttarakhand cards use the places the old site names, such as Madurai, Thanjavur, Badrinath and Kedarnath.
+It confirms the same destinations as the client's project files, such as Goa, South India, Uttarakhand, Rajasthan and Maldives.
 
 ## Sections
 
 1. Top bar with phone, email and Instagram
 2. Sticky header with mobile menu and a WhatsApp button
 3. Hero with a "Plan my trip" form that opens WhatsApp with the details filled in
-4. Services: visa, flights, trains, hotels, holiday packages
-5. Packages: the client's 16 real tours, 8 in India and 8 international, with filters and a WhatsApp enquiry button on each
-6. Visa help steps and popular visa countries
-7. Why choose us
-8. Contact details, directions link and Google map
-9. Footer and a floating WhatsApp button
+4. About: founder story, key numbers and the three-person team
+5. Services: visa, flights, trains, hotels, holiday packages, dharmik tours and Bhagwat Saptah
+6. Packages: the client's 16 real tours, 8 in India and 8 international, with filters and a WhatsApp enquiry button on each
+7. Visa help steps and visa countries, led by USA, UK, Canada and Australia
+8. Why choose us
+9. Contact details for both phone lines, directions link and Google map
+10. Footer and a floating WhatsApp button
 
 ## Still to do before going live
 

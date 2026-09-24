@@ -14,6 +14,14 @@ These come from the client's business card files in Drive.
 - Services: Visa, Flights, Trains, Hotels, Packages
 - Instagram: @vinayak_holiday_2163
 - Domain on the card: www.vinayakholiday.com
+- Hours: Monday to Sunday, 9:00 AM to 7:00 PM, from their travel directory listing
+
+## Taken from the old website
+
+The old site at vinayakholiday.com could not be opened from the build environment.
+Its public search listings show these pages: Home, About Us, Air Ticket, International Tour, and destination pages.
+Their own destinations are Goa, South India, Uttarakhand, Rajasthan and Maldives, so those appear first.
+The South India and Uttarakhand cards use the places the old site names, such as Madurai, Thanjavur, Badrinath and Kedarnath.
 
 ## Sections
 
@@ -33,7 +41,9 @@ These come from the client's business card files in Drive.
 - **Add photos.** See `assets/img/README.md` for the file names. Cards show colour gradients until then.
 - **Check the packages.** Tours, durations and inclusions are typical examples, not the client's own list. Edit the `PACKAGES` list at the top of `assets/js/main.js`.
 - **Prices** show "On request" on purpose. Add real prices only once the client confirms them.
-- **Match the demo890 layout** if needed. The demo890 source and the client's zip were too large to open from this environment.
+- **Match the demo890 layout.** Demo890 is a client file and must never be changed or deleted.
+  A duplicate named `vinayak-holiday-from-demo890-frame.zip` sits beside `gv-demo890-deploy.zip` in the same Drive folder.
+  Build from the duplicate only. Neither zip could be opened from this environment, so this page does not use its layout yet.
 
 ## Run locally
 

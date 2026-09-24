@@ -7,10 +7,10 @@ Until a photo exists, each card shows its own colour gradient instead.
 |---|---|
 | hero.jpg | Big background photo at the top of the page |
 | kashmir.jpg | Kashmir package card |
-| kerala.jpg | Kerala package card |
+| south-india.jpg | South India package card |
 | goa.jpg | Goa package card |
 | rajasthan.jpg | Rajasthan package card |
-| himachal.jpg | Himachal package card |
+| uttarakhand.jpg | Uttarakhand package card |
 | andaman.jpg | Andaman package card |
 | dubai.jpg | Dubai package card |
 | thailand.jpg | Thailand package card |

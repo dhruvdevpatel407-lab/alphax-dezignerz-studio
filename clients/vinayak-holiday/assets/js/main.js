@@ -10,17 +10,17 @@
    * Two colours make the card's fallback gradient when no photo exists.
    */
   var PACKAGES = [
-    { name: "Kashmir", region: "india", days: "6 Nights / 7 Days", places: "Srinagar, Gulmarg, Pahalgam, Sonamarg", tag: "Best seller", img: "kashmir.jpg", c: ["#1E3A8A", "#60A5FA"], inc: ["Houseboat stay", "Shikara ride", "Private cab"] },
-    { name: "Kerala", region: "india", days: "5 Nights / 6 Days", places: "Munnar, Thekkady, Alleppey, Kochi", tag: "Family favourite", img: "kerala.jpg", c: ["#065F46", "#34D399"], inc: ["Backwater houseboat", "Tea gardens", "Breakfast"] },
-    { name: "Goa", region: "india", days: "3 Nights / 4 Days", places: "North Goa, South Goa, Old Goa", tag: "Short break", img: "goa.jpg", c: ["#0E7490", "#FBBF24"], inc: ["Beach resort", "Sightseeing", "Airport transfers"] },
-    { name: "Rajasthan", region: "india", days: "6 Nights / 7 Days", places: "Jaipur, Udaipur, Jodhpur, Jaisalmer", tag: "Heritage", img: "rajasthan.jpg", c: ["#9A3412", "#FDBA74"], inc: ["Desert camp", "Palace visits", "Private cab"] },
-    { name: "Himachal", region: "india", days: "6 Nights / 7 Days", places: "Shimla, Manali, Kullu, Solang", tag: "Hills", img: "himachal.jpg", c: ["#334155", "#93C5FD"], inc: ["Volvo or cab", "Hotels", "Breakfast & dinner"] },
+    { name: "Goa", region: "india", days: "3 Nights / 4 Days", places: "North Goa, South Goa, Old Goa", tag: "Sun, sand & fun", img: "goa.jpg", c: ["#0E7490", "#FBBF24"], inc: ["Beach resort", "Sightseeing", "Airport transfers"] },
+    { name: "South India", region: "india", days: "7 Nights / 8 Days", places: "Madurai, Thanjavur, Bangalore, Pondicherry", tag: "Temples & heritage", img: "south-india.jpg", c: ["#065F46", "#34D399"], inc: ["Meenakshi Temple", "Brihadeshwara Temple", "Private cab"] },
+    { name: "Uttarakhand", region: "india", days: "6 Nights / 7 Days", places: "Badrinath, Kedarnath, Valley of Flowers, Chopta", tag: "Himalayan yatra", img: "uttarakhand.jpg", c: ["#334155", "#93C5FD"], inc: ["Char Dham options", "Chandrashila trek", "Hotels"] },
+    { name: "Rajasthan", region: "india", days: "6 Nights / 7 Days", places: "Jaipur, Udaipur, Jodhpur, Jaisalmer", tag: "Royal splendour", img: "rajasthan.jpg", c: ["#9A3412", "#FDBA74"], inc: ["Forts & palaces", "Lake Pichola", "Desert camp"] },
+    { name: "Kashmir", region: "india", days: "6 Nights / 7 Days", places: "Srinagar, Gulmarg, Pahalgam, Sonamarg", tag: "Paradise on earth", img: "kashmir.jpg", c: ["#1E3A8A", "#60A5FA"], inc: ["Houseboat stay", "Shikara ride", "Private cab"] },
     { name: "Andaman", region: "india", days: "5 Nights / 6 Days", places: "Port Blair, Havelock, Neil Island", tag: "Islands", img: "andaman.jpg", c: ["#0369A1", "#5EEAD4"], inc: ["Ferry tickets", "Radhanagar Beach", "Transfers"] },
+    { name: "Maldives", region: "world", days: "4 Nights / 5 Days", places: "Male, Resort Island", tag: "Tropical paradise", img: "maldives.jpg", c: ["#0E7490", "#A5F3FC"], inc: ["Overwater villa option", "Speedboat transfer", "Meal plans"] },
     { name: "Dubai", region: "world", days: "4 Nights / 5 Days", places: "Dubai City, Desert Safari, Marina, Abu Dhabi", tag: "Most asked", img: "dubai.jpg", c: ["#78350F", "#FCD34D"], inc: ["Visa help", "Desert safari", "Dhow cruise"] },
     { name: "Thailand", region: "world", days: "5 Nights / 6 Days", places: "Pattaya, Bangkok, Coral Island", tag: "Value pick", img: "thailand.jpg", c: ["#7C2D12", "#F472B6"], inc: ["Coral Island tour", "City tour", "Transfers"] },
     { name: "Bali", region: "world", days: "5 Nights / 6 Days", places: "Kuta, Ubud, Nusa Penida", tag: "Honeymoon", img: "bali.jpg", c: ["#14532D", "#FDE68A"], inc: ["Pool villa option", "Ubud tour", "Transfers"] },
     { name: "Singapore & Malaysia", region: "world", days: "6 Nights / 7 Days", places: "Singapore, Kuala Lumpur, Genting", tag: "Kids love it", img: "singapore.jpg", c: ["#312E81", "#F87171"], inc: ["Universal Studios", "Night Safari", "City tours"] },
-    { name: "Maldives", region: "world", days: "4 Nights / 5 Days", places: "Male, Resort Island", tag: "Luxury", img: "maldives.jpg", c: ["#0E7490", "#A5F3FC"], inc: ["Water villa option", "Speedboat transfer", "Meal plans"] },
     { name: "Europe", region: "world", days: "10 Nights / 11 Days", places: "Paris, Switzerland, Italy", tag: "Dream trip", img: "europe.jpg", c: ["#1E293B", "#C4B5FD"], inc: ["Schengen visa help", "Eiffel Tower", "Mt. Titlis"] }
   ];
 

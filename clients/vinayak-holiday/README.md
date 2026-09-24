@@ -29,7 +29,7 @@ The South India and Uttarakhand cards use the places the old site names, such as
 2. Sticky header with mobile menu and a WhatsApp button
 3. Hero with a "Plan my trip" form that opens WhatsApp with the details filled in
 4. Services: visa, flights, trains, hotels, holiday packages
-5. Packages: 12 tours with India and International filters, each with a WhatsApp enquiry button
+5. Packages: the client's 16 real tours, 8 in India and 8 international, with filters and a WhatsApp enquiry button on each
 6. Visa help steps and popular visa countries
 7. Why choose us
 8. Contact details, directions link and Google map
@@ -39,7 +39,7 @@ The South India and Uttarakhand cards use the places the old site names, such as
 
 - **Swap the placeholder logo.** `assets/img/logo.svg` is a stand-in. Replace it with the client's real logo.
 - **Add photos.** See `assets/img/README.md` for the file names. Cards show colour gradients until then.
-- **Check the packages.** Tours, durations and inclusions are typical examples, not the client's own list. Edit the `PACKAGES` list at the top of `assets/js/main.js`.
+- **Packages** come from the client's own project in the `vinayak-holiday-18-9` Drive folder, in `lib/domestic-tours.ts` and `lib/international-tours.ts`. Their data has no trip lengths or prices, so none are shown. Edit the `PACKAGES` list at the top of `assets/js/main.js`.
 - **Prices** show "On request" on purpose. Add real prices only once the client confirms them.
 - **Match the demo890 layout.** Demo890 is a client file and must never be changed or deleted.
   A duplicate named `vinayak-holiday-from-demo890-frame.zip` sits beside `gv-demo890-deploy.zip` in the same Drive folder.

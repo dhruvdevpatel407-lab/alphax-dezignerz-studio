@@ -5,23 +5,30 @@
   document.documentElement.classList.remove("no-js");
 
   /*
-   * Package list. Edit this array to add, remove or change tours.
+   * Package list, taken from the client's own project files
+   * (lib/domestic-tours.ts and lib/international-tours.ts).
    * region: "india" or "world". img: file name inside assets/img/.
    * Two colours make the card's fallback gradient when no photo exists.
+   * Every tour includes sights, hotels, meals and transport.
    */
+  var INCLUDES = ["Sights", "Hotels", "Meals", "Transport"];
   var PACKAGES = [
-    { name: "Goa", region: "india", days: "3 Nights / 4 Days", places: "North Goa, South Goa, Old Goa", tag: "Sun, sand & fun", img: "goa.jpg", c: ["#0E7490", "#FBBF24"], inc: ["Beach resort", "Sightseeing", "Airport transfers"] },
-    { name: "South India", region: "india", days: "7 Nights / 8 Days", places: "Madurai, Thanjavur, Bangalore, Pondicherry", tag: "Temples & heritage", img: "south-india.jpg", c: ["#065F46", "#34D399"], inc: ["Meenakshi Temple", "Brihadeshwara Temple", "Private cab"] },
-    { name: "Uttarakhand", region: "india", days: "6 Nights / 7 Days", places: "Badrinath, Kedarnath, Valley of Flowers, Chopta", tag: "Himalayan yatra", img: "uttarakhand.jpg", c: ["#334155", "#93C5FD"], inc: ["Char Dham options", "Chandrashila trek", "Hotels"] },
-    { name: "Rajasthan", region: "india", days: "6 Nights / 7 Days", places: "Jaipur, Udaipur, Jodhpur, Jaisalmer", tag: "Royal splendour", img: "rajasthan.jpg", c: ["#9A3412", "#FDBA74"], inc: ["Forts & palaces", "Lake Pichola", "Desert camp"] },
-    { name: "Kashmir", region: "india", days: "6 Nights / 7 Days", places: "Srinagar, Gulmarg, Pahalgam, Sonamarg", tag: "Paradise on earth", img: "kashmir.jpg", c: ["#1E3A8A", "#60A5FA"], inc: ["Houseboat stay", "Shikara ride", "Private cab"] },
-    { name: "Andaman", region: "india", days: "5 Nights / 6 Days", places: "Port Blair, Havelock, Neil Island", tag: "Islands", img: "andaman.jpg", c: ["#0369A1", "#5EEAD4"], inc: ["Ferry tickets", "Radhanagar Beach", "Transfers"] },
-    { name: "Maldives", region: "world", days: "4 Nights / 5 Days", places: "Male, Resort Island", tag: "Tropical paradise", img: "maldives.jpg", c: ["#0E7490", "#A5F3FC"], inc: ["Overwater villa option", "Speedboat transfer", "Meal plans"] },
-    { name: "Dubai", region: "world", days: "4 Nights / 5 Days", places: "Dubai City, Desert Safari, Marina, Abu Dhabi", tag: "Most asked", img: "dubai.jpg", c: ["#78350F", "#FCD34D"], inc: ["Visa help", "Desert safari", "Dhow cruise"] },
-    { name: "Thailand", region: "world", days: "5 Nights / 6 Days", places: "Pattaya, Bangkok, Coral Island", tag: "Value pick", img: "thailand.jpg", c: ["#7C2D12", "#F472B6"], inc: ["Coral Island tour", "City tour", "Transfers"] },
-    { name: "Bali", region: "world", days: "5 Nights / 6 Days", places: "Kuta, Ubud, Nusa Penida", tag: "Honeymoon", img: "bali.jpg", c: ["#14532D", "#FDE68A"], inc: ["Pool villa option", "Ubud tour", "Transfers"] },
-    { name: "Singapore & Malaysia", region: "world", days: "6 Nights / 7 Days", places: "Singapore, Kuala Lumpur, Genting", tag: "Kids love it", img: "singapore.jpg", c: ["#312E81", "#F87171"], inc: ["Universal Studios", "Night Safari", "City tours"] },
-    { name: "Europe", region: "world", days: "10 Nights / 11 Days", places: "Paris, Switzerland, Italy", tag: "Dream trip", img: "europe.jpg", c: ["#1E293B", "#C4B5FD"], inc: ["Schengen visa help", "Eiffel Tower", "Mt. Titlis"] }
+    { name: "Goa", slug: "goa", region: "india", tag: "Sun, sand & fun", places: "Baga, Palolem, Anjuna, Fort Aguada, Old Goa", c: ["#0E7490", "#FBBF24"] },
+    { name: "Rajasthan", slug: "rajasthan", region: "india", tag: "Royal splendour", places: "Jaipur, Jodhpur, Udaipur, Pushkar, Thar Desert", c: ["#9A3412", "#FDBA74"] },
+    { name: "Uttarakhand", slug: "uttarakhand", region: "india", tag: "Devbhumi, land of gods", places: "Rishikesh, Badrinath, Kedarnath, Valley of Flowers, Chopta", c: ["#334155", "#93C5FD"] },
+    { name: "Char Dham", slug: "char-dham", region: "india", tag: "Sacred yatra", places: "Yamunotri, Gangotri, Kedarnath, Badrinath", c: ["#7C2D12", "#FCD34D"] },
+    { name: "South India", slug: "south-india", region: "india", tag: "Temples & traditions", places: "Chennai, Madurai, Thanjavur, Bangalore, Pondicherry", c: ["#065F46", "#34D399"] },
+    { name: "Kerala", slug: "kerala", region: "india", tag: "Backwaters & tea hills", places: "Alleppey, Munnar, Periyar Tiger Reserve", c: ["#14532D", "#86EFAC"] },
+    { name: "Himachal Pradesh", slug: "himachal-pradesh", region: "india", tag: "Himalayan wonders", places: "Shimla, Manali, Dharamshala, McLeod Ganj", c: ["#1E3A8A", "#93C5FD"] },
+    { name: "Andaman & Nicobar", slug: "andaman-nicobar", region: "india", tag: "Island escape", places: "Port Blair, Havelock, Neil Island", c: ["#0369A1", "#5EEAD4"] },
+    { name: "Dubai", slug: "dubai", region: "world", tag: "Modern marvels", places: "Burj Khalifa, Palm Jumeirah, Dubai Creek, Desert Safari", c: ["#78350F", "#FCD34D"] },
+    { name: "Maldives", slug: "maldives", region: "world", tag: "Tropical paradise", places: "Overwater villas, coral reefs, local islands", c: ["#0E7490", "#A5F3FC"] },
+    { name: "Bangkok & Pattaya", slug: "bangkok-pattaya", region: "world", tag: "City & beach", places: "Wat Pho, Wat Arun, Coral Island, Alcazar Show", c: ["#7C2D12", "#F472B6"] },
+    { name: "Phuket & Krabi", slug: "phuket-krabi", region: "world", tag: "Thai islands", places: "Patong Beach, Phuket Old Town, Railay, Ao Nang", c: ["#0F766E", "#FDE68A"] },
+    { name: "Singapore & Malaysia", slug: "singapore-malaysia", region: "world", tag: "Two countries, one trip", places: "Singapore, Kuala Lumpur, Cameron Highlands, Penang, Langkawi", c: ["#312E81", "#F87171"] },
+    { name: "Bali", slug: "bali", region: "world", tag: "Island of gods", places: "Temples, rice terraces, waterfalls, beaches", c: ["#14532D", "#FDE68A"] },
+    { name: "Sri Lanka", slug: "sri-lanka", region: "world", tag: "Pearl of the Indian Ocean", places: "Sigiriya, Anuradhapura, tea country, wildlife safari", c: ["#166534", "#FCA5A5"] },
+    { name: "Viet Nam", slug: "vietnam", region: "world", tag: "Timeless landscapes", places: "Hanoi, Halong Bay, Hoi An, Ho Chi Minh City", c: ["#1E293B", "#C4B5FD"] }
   ];
 
   function waLink(text) {
@@ -44,24 +51,24 @@
 
       var img = el("div", "pkg__img");
       img.style.backgroundImage =
-        "url('assets/img/" + p.img + "'), linear-gradient(135deg, " + p.c[0] + ", " + p.c[1] + ")";
+        "url('assets/img/" + p.slug + ".jpg'), linear-gradient(135deg, " + p.c[0] + ", " + p.c[1] + ")";
       img.setAttribute("role", "img");
       img.setAttribute("aria-label", p.name + " holiday");
       img.appendChild(el("span", "pkg__tag", p.tag));
-      img.appendChild(el("span", "pkg__days", p.days));
+      img.appendChild(el("span", "pkg__days", p.region === "india" ? "India" : "International"));
 
       var body = el("div", "pkg__body");
       body.appendChild(el("h3", "", p.name));
       body.appendChild(el("p", "pkg__places", p.places));
       var inc = el("ul", "pkg__inc");
-      p.inc.forEach(function (i) { inc.appendChild(el("li", "", i)); });
+      INCLUDES.forEach(function (i) { inc.appendChild(el("li", "", i)); });
       body.appendChild(inc);
 
       var foot = el("div", "pkg__foot");
       var price = el("span", "pkg__price", "Price");
       price.appendChild(el("b", "", "On request"));
       var btn = el("a", "btn btn--sm btn--accent", "Enquire");
-      btn.href = waLink("Hi Vinayak Holiday, please share details and price for the " + p.name + " package (" + p.days + ").");
+      btn.href = waLink("Hi Vinayak Holiday, please share details and price for the " + p.name + " tour.");
       btn.target = "_blank";
       btn.rel = "noopener";
       foot.appendChild(price);
